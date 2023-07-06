@@ -252,7 +252,6 @@ ____
 
 Положить в папку `/neural_processing/` файл [`inswapper_128.onnx`](https://drive.google.com/file/d/1ZIuqBh8BacV1uMkabjCAzEUt1qrY-T-W/view?usp=sharing)
 
-### Репозиторий нейросети 
-[`https://github.com/s0md3v/roop`](https://github.com/s0md3v/roop)
+Репозиторий нейросети: [`https://github.com/s0md3v/roop`](https://github.com/s0md3v/roop)
     
 
