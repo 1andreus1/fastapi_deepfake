@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: fastapi_app
+    env_file:
+      - .env
+    container_name: fastapi_app
+    ports:
+      - 8000:8000
+    volumes:
+      - ./downloads:/deep_fake/downloads
+      - ./uploads:/deep_fake/uploads
+    depends_on:
+      - redis
+#      - np
+#
+#  np:
+#    mem_limit: 45g
+#    memswap_limit: 50g
+#    mem_reservation: 40g
+#    mem_swappiness: 100
+#    build:
+#      context: neural_processing
+#    env_file:
+#      - .env
+#    container_name: np_app
+#    volumes:
+#      - ${DOWNLOADS_DIR}:/deep_fake/downloads
+#      - ${UPLOADS_DIR}:/deep_fake/uploads
+#    depends_on:
+#      - redis
+
+  redis:
+    image: redis:latest
+    container_name: redis_app
+    command: redis-server --bind 0.0.0.0 --port 5370
+    expose:
+      - 5370
+    ports:
+      - 5370:5370
