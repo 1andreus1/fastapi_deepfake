@@ -7,7 +7,7 @@ ____
 
 ### 1. Создание задачи по генерации deepfake
 
-<span style="font-size: 12px; color:blue; border: 2px solid blue; border-radius: 5px; padding: 4px; font-weight: bold;">POST</span> `/task/create/`
+`POST` `/task/create/`
 
 #### Описание:
 
@@ -59,7 +59,7 @@ ____
 
 ### 2. Получение статуса задачи
 
-<span style="font-size: 12px; color:green; border: 2px solid green; border-radius: 5px; padding: 4px; font-weight: bold;">GET</span>  `/task/status/`
+`GET` `/task/status/`
 
 #### Описание:
 
@@ -105,7 +105,7 @@ ____
 
 ### 3. Скачивание сгенерированного видео
 
-<span style="font-size: 12px; color:green; border: 2px solid green; border-radius: 5px; padding: 4px; font-weight: bold;">GET</span>  `/task/download/`
+`GET`  `/task/download/`
 
 #### Описание:
 
